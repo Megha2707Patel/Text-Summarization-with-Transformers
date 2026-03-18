@@ -4,12 +4,14 @@
 > **Megha Punamchand Patel** — Independent Researcher, 2026
 >
 > *Manuscript under preparation for arXiv submission (cs.CL)*
+>
+> 📄 **[Read the Paper (PDF)](https://github.com/Megha2707Patel/Text-Summarization-with-Transformers/blob/main/metric_misalignment_patel_2026.pdf)**
 
 ---
 
 ## Overview
 
-This repository contains the full code for the research paper:
+This repository contains the full code and paper for:
 
 **"Metric Misalignment in Abstractive Summarization: High ROUGE Scores Do Not Imply Factual Reliability"**
 
@@ -24,10 +26,11 @@ This exposes a fundamental misalignment between widely used evaluation metrics a
 ## Repository Structure
 
 ```
-├── bart_summarizer.py      # BART fine-tuning, training loop, ROUGE evaluation
-├── factuality_eval.py      # Manual factuality annotation tool (reproduces paper results)
-├── results/                # Annotation outputs (created at runtime)
-└── outputs/                # Model checkpoints (created at runtime)
+├── bart_summarizer.py                 # BART fine-tuning, training loop, ROUGE evaluation
+├── factuality_eval.py                 # Manual factuality annotation tool (reproduces paper results)
+├── metric_misalignment_patel_2026.pdf # Full research paper
+├── results/                           # Annotation outputs (created at runtime)
+└── outputs/                           # Model checkpoints (created at runtime)
 ```
 
 ---
@@ -47,8 +50,7 @@ This exposes a fundamental misalignment between widely used evaluation metrics a
 | Major hallucination | 18 | 9% |
 | **Total with errors** | **46** | **23%** |
 
-**ROUGE-L: factually correct summaries = 0.423 vs error summaries = 0.415**
-— a difference that is neither statistically significant nor practically meaningful, confirming that ROUGE cannot distinguish reliable summaries from hallucinated ones.
+**ROUGE-L: factually correct summaries = 0.423 vs error summaries = 0.415** — a difference that is neither statistically significant nor practically meaningful, confirming that ROUGE cannot distinguish reliable summaries from hallucinated ones.
 
 ---
 
@@ -163,13 +165,12 @@ Error types (for labels 2 and 3):
 
 ## Citation
 
-If you use this code or findings in your work, please cite:
-
 ```
 Patel, M. P. (2026). Metric Misalignment in Abstractive Summarization:
 High ROUGE Scores Do Not Imply Factual Reliability.
-Manuscript under preparation.
+Manuscript under preparation for arXiv submission (cs.CL).
 GitHub: https://github.com/Megha2707Patel/Text-Summarization-with-Transformers
+Paper: https://github.com/Megha2707Patel/Text-Summarization-with-Transformers/blob/main/metric_misalignment_patel_2026.pdf
 ```
 
 Once the arXiv preprint is live, the citation will be updated with the arXiv ID.
